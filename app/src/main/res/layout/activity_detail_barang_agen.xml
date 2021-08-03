@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.Agen.DetailBarangAgenActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#66DE93"
+                android:orientation="horizontal"
+                android:padding="14dp">
+
+                <TextView
+                    android:id="@+id/tv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+                    android:drawablePadding="14dp"
+                    android:drawableTint="@color/white"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Kembali"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/imgBarang"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:background="@drawable/bgnav"
+                android:layout_margin="14dp">
+                <TextView
+                    android:id="@+id/tv_JT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textSize="14dp"
+                    android:background="@drawable/roundbox"
+                    android:backgroundTint="#66DE93"
+                    android:text="Jenis Barang"
+                    android:layout_gravity="right"
+                    android:paddingHorizontal="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="14dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/namaBarang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="14dp">
+                <TextView
+                    android:id="@+id/tv_nBarang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Barang"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinsbold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="14dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinsbold"/>
+
+                <TextView
+                    android:id="@+id/tv_jBerat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="1 Kg"
+                    android:textColor="#80000000"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="14dp"
+                android:layout_marginTop="5dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_baseline_fiber_smart_record_24"
+                    android:backgroundTint="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="14dp">
+                    <TextView
+                        android:id="@+id/tv_namaPenjual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Penjual"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/tv_alamatBarang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat"
+                        android:textSize="12dp"
+                        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:textSize="14dp"
+                android:text="Deskripsi Barang"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="14dp"
+                android:id="@+id/tv_ketTransaksi"/>
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/btnKonfirmasi"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Detail Transaksi"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

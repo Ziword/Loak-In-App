@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:checkableBehavior="single">
+      <item android:title="Transaksi">
+          <menu>
+              <item android:id="@+id/nav_loakInMenu"
+                  android:title="LoakIn"
+                  android:icon="@drawable/jualsampah"/>
+              <item android:id="@+id/nav_memberPesanan"
+                  android:title="Pesanan"
+                  android:icon="@drawable/ordermanagement"/>
+              <item android:id="@+id/nav_agenNear"
+                  android:title="Agen Terdekat"
+                  android:icon="@drawable/logoagenterdekat"/>
+          </menu>
+      </item>
+  </group>
+
+    <item android:title="Laporan">
+        <menu>
+            <item android:id="@+id/nav_laporan"
+                android:icon="@drawable/ic_baseline_bar_chart_24"
+                android:title="Chart Mingguan"/>
+        </menu>
+    </item>
+
+    <item android:title="Setting">
+        <menu>
+            <item android:id="@+id/nav_memberLogout"
+                android:icon="@drawable/ic_baseline_login_24"
+                android:title="Log Out"/>
+        </menu>
+    </item>
+</menu>

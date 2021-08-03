@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:background="@drawable/bgnav2"
+    android:gravity="bottom"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/profile"/>
+    <TextView
+        android:id="@+id/namaUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Muhammad Fikri"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:fontFamily="@font/poppinsbold"/>
+    <TextView
+        android:id="@+id/jenisUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Member Loak-In"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppinsmedium"/>
+    <TextView
+        android:id="@+id/keProfil"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinsmedium"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:drawableRight="@drawable/ic_baseline_settings_24"
+        android:drawableTint="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+</LinearLayout>

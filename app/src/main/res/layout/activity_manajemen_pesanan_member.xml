@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Member.ManajemenPesananMember">
+
+    <LinearLayout
+        android:id="@+id/upBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/backMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+            android:drawableTint="@color/greenbtn"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Kembali"
+            android:textColor="@color/greenbtn"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutButtonTransaksi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/browser_actions_divider_color"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upBar">
+
+        <LinearLayout
+            android:id="@+id/linearbttnTransaksiDiproses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFEAC9"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bttnTransaksiDiproses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFEAC9"
+
+                android:padding="15dp"
+                android:text="Transaksi Diproses"
+                android:textAllCaps="false"
+                android:textColor="#00b300" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearbttnTransaksiSelesai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#66DE93"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bttnTransaksiSelesai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#66DE93"
+                android:padding="15dp"
+                android:text="Transaksi Selesai"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/containerManajemenPesananMember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/layoutButtonTransaksi"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutButtonTransaksi"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_weight="1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

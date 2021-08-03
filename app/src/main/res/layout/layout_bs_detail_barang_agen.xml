@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bs_container_detailBarang"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/row_detail_id_barang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID BARANG"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail Barang"
+            android:textSize="23dp"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/row_detail_berat_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 Kg"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="right"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/row_detail_nama_penjual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Nama Penjual : kang Gucci"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/row_detail_nama_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Nama Barang : Baju Loak"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/row_detail_jenis_loak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Jenis Loak : Mixed"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Catatan : "
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/row_detail_catatan_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Ini adalah catata dari tukang loak."
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Alamat : "
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/row_detail_alamat_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Jalan jalan dpadang pasir"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:id="@+id/btn_wa"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/icon_wa"
+            android:onClick="btn_wapenjual"
+            android:orientation="horizontal"/>
+        <LinearLayout
+            android:id="@+id/btn_gmap"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_gmap"
+            android:onClick="btn_gmap_barang"
+            android:orientation="horizontal"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ambil_loak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Ambil Loakan"
+        android:backgroundTint="@color/greenbtn"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_cancel_loak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Batalkan Loak"
+        android:backgroundTint="@color/redbtn"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/linearAgen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/konfirmasi_selesaiAgen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Terima Barang"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/bluebtn"/>
+        <Button
+            android:id="@+id/konfirmasi_batalAgen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Batalkan"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/redbtn"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/statusTransaksiSelesai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_margin="10dp"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="~ Transaksi Barang Selesai ~"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppinsbold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/statusTransaksiBatal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_margin="10dp"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Transaksi Barang Dibatalkan -"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppinsbold"/>
+    </LinearLayout>
+
+</LinearLayout>

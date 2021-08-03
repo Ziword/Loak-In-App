@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Loak-In App</string>
+    <string name="button_not_register">Tidak memiliki akun? <font color='blue'>Daftar Sekarang</font></string>
+    <string name="after_register">Sudah memiliki akun? <font color='blue'>Login Sekarang</font></string>
+    <string name="lupa_password">Lupa password akun?<font color='red'>Reset Password</font></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_agen_near">Map</string>
+    <string name="title_activity_transaksi_beli_agen">Map</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="navOpen">Open Navbac</string>
+    <string name="navClose">Close Navbac</string>
+</resources>

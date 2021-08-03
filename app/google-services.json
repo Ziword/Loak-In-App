@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "839290399921",
+    "project_id": "loak-in-app",
+    "storage_bucket": "loak-in-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839290399921:android:407a6ad1d4ebf972448690",
+        "android_client_info": {
+          "package_name": "com.d3si.loak_inapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839290399921-kkeubleoumk4ulf6cpkht49ic9pdmgg1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.d3si.loak_inapp",
+            "certificate_hash": "49850ecaf07f0036a73dda64fc7b28ec7f884438"
+          }
+        },
+        {
+          "client_id": "839290399921-s4emr00mkrvamti3ed9hh7qvg57orabe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYH9iZAT_TdvzioQxpR3FnuIL8-S6_cQo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839290399921-s4emr00mkrvamti3ed9hh7qvg57orabe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

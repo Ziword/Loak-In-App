@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#FAF3F3"
+    >
+    <TextView
+        android:id="@+id/row_idtransaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="16"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/stsusBarang"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#F1CA89">
+        <TextView
+            android:id="@+id/row_statusbarang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sedang dikirim"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/row_tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16"
+                android:textSize="16dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/row_bulan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Januari"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/row_tahun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2021"
+                android:textSize="16dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/linearTanggal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp">
+                <TextView
+                    android:id="@+id/row_namabarang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ini akan menjadi nama barang loak yang akan di tempel"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/row_beratbarang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Berat Barang : 10Kg"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:id="@+id/row_jenisbarang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="jenis barang transaksi : 10Kg"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
